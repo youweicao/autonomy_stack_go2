@@ -29,6 +29,7 @@ find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(visibility_graph_msg REQUIRED)
+find_package(tf2_sensor_msgs REQUIRED)
 
 # Directories
 include_directories(
@@ -40,6 +41,7 @@ include_directories(
   ${PCL_INCLUDE_DIRS}
   ${EIGEN3_INCLUDE_DIR}
   ${OpenCV_INCLUDE_DIRS}
+  ${tf2_sensor_msgs_INCLUDE_DIRS}
 )
 
 link_directories(
