@@ -8,7 +8,7 @@ public:
     H264Repub() : Node("h264_repub") {
         image_publisher_ = this->create_publisher<sensor_msgs::msg::Image>("/camera/image/raw", 10);
 
-        std::string multicast_iface = "etho0";
+        std::string multicast_iface = "enp0s31f6";
         this->declare_parameter("multicast_iface", multicast_iface);
         this->get_parameter("multicast_iface", multicast_iface);
 
